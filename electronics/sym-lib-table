@@ -1,3 +1,6 @@
 (sym_lib_table
-  (lib (name MacroPad-rescue)(type Legacy)(uri ${KIPRJMOD}/MacroPad-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Arduino")(type "KiCad")(uri "${KIPRJMOD}/components/Arduino.kicad_sym")(options "")(descr ""))
+  (lib (name "SSD1306")(type "KiCad")(uri "${KIPRJMOD}/components/SSD1306_OLED-0.91-128x32.kicad_sym")(options "")(descr ""))
+  (lib (name "ArduinoProMicro")(type "KiCad")(uri "${KIPRJMOD}/components/ArduinoProMicro.kicad_sym")(options "")(descr ""))
 )

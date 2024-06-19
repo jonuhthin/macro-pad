@@ -8,9 +8,11 @@
 #include <SimpleRotary.h>
 #include <HID-Project.h>
 #include <HID-Settings.h>
-#define SW 7
-#define DT 6
+
 #define CLK 8
+#define DT 7
+#define SW 6
+
 
 //Key Stuff
 #define K1 2
@@ -37,7 +39,7 @@ byte lastDir = 0;
 unsigned long prevTime = 0;
 
 void setup(){
-//  Serial.begin(9600);
+  Serial.begin(9600);
 //    // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
 //  if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
 //    Serial.println(F("SSD1306 allocation failed"));
@@ -94,7 +96,7 @@ void loop(){
   
 // 
   if (digitalRead(K3) == 0){
-    Keyboard.write('f');
+    Keyboard.write(KEY_F11);
     delay(500);
   }
 
@@ -112,7 +114,6 @@ void loop(){
       Consumer.write(MEDIA_VOLUME_UP);
       
       //display.println(F("Volume +"));,, //refreshDisplay();
-      lastDir = rDir;
   }
   if ( rDir == 2 ) {
       // CCW
@@ -120,12 +121,17 @@ void loop(){
       Consumer.write(MEDIA_VOLUME_DOWN);
       
       //display.println(F("Volume -"));
-      //refreshDisplay();
-      lastDir = rDir;
   }
 
 
   if ( rLBtn == 1 ) {
+    System.write(SYSTEM_POWER_DOWN);
+    Serial.println("LONG pressed rbtn");
+
+  }
+
+  if ( rBtn == 1 ) {
+    Serial.println("pressed rbtn");
     System.write(SYSTEM_SLEEP);
   }
 
