@@ -108,14 +108,14 @@ void updateVolumeBar(bool up)
   display.display();
 }
 
-void printKeys(KeyboardKeycode *arr, int len)
+void printKeys(Key key[])
 {
 
   Serial.print("[");
-  for (int i = 0; i < len; i++)
+  for (int i = 0; i < LIST_MAX; i++)
   {
-    Serial.print(arr[i]);
-    if (i < len - 1)
+    Serial.print(key[i].kstate);
+    if (i < LIST_MAX - 1)
     {
       Serial.print(", ");
     }
@@ -145,7 +145,6 @@ void loop()
     // }4445
     // Serial.println("]");
     NKROKeyboard.send();
-    NKROKeyboard.releaseAll();
     prevTimeHeld = millis();
   }
 
@@ -188,6 +187,7 @@ void loop()
 
   if (customKeypad.getKeys())
   {
+    printKeys(customKeypad.key);
     for (int i = 0; i < LIST_MAX; i++) // Scan the whole key list.
     {
       int idx = customKeypad.key[i].kcode;
@@ -207,7 +207,6 @@ void loop()
         {
           msg = " PRESSED.";
           NKROKeyboard.add(key);
-
           display.clearDisplay();
           display.print("i: ");
           display.println(idx);
@@ -232,45 +231,13 @@ void loop()
         case HOLD:
         {
           msg = " HOLD.";
-          int oldLength = heldLength;
-          KeyboardKeycode *newHeld = (KeyboardKeycode *)realloc(held, sizeof(KeyboardKeycode) * (oldLength + 1)); // new KeyboardKeycode[oldLength + 1];
-
-          newHeld[oldLength] = key;
-          heldLength++;
-          for (int i = 0; i < oldLength; i++)
-          {
-            newHeld[i] = held[i];
-          }
-
-          held = newHeld;
-          printKeys(held, heldLength);
+          NKROKeyboard.add(key);
           break;
         }
         case RELEASED:
         {
           msg = " RELEASED.";
-          for (int i = 0; i < heldLength; i++)
-          {
-            if (key == held[i])
-            {
-              // remove the key from the held array
-              int delete_i = i;
-              int oldLength = heldLength;
-              KeyboardKeycode *newHeld = (KeyboardKeycode *)realloc(held, sizeof(KeyboardKeycode) * (oldLength - 1));
-              heldLength--;
-
-              for (int i = 0; i < delete_i; i++)
-              {
-                newHeld[i] = held[i];
-              }
-              for (int i = delete_i + 1; i < oldLength; i++)
-              {
-                newHeld[i - 1] = held[i];
-              }
-              held = newHeld;
-            }
-          }
-          printKeys(held, heldLength);
+          NKROKeyboard.release(key);
           break;
         }
         case IDLE:

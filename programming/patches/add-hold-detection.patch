@@ -1,0 +1,4 @@
+163c163
+< 		if (key[i].stateChanged)
+---
+> 		if (key[i].stateChanged || key[i].kstate == HOLD)
