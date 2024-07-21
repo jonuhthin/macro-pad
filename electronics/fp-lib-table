@@ -1,4 +1,6 @@
 (fp_lib_table
   (version 7)
   (lib (name "proj_components")(type "KiCad")(uri "${KIPRJMOD}/components")(options "")(descr ""))
+  (lib (name "MCP73831T-2ACI_OT")(type "KiCad")(uri "${KIPRJMOD}/components/MCP73831T-2ACI_OT.pretty")(options "")(descr ""))
+  (lib (name "LL4148")(type "KiCad")(uri "${KIPRJMOD}/components/LL4148.pretty")(options "")(descr ""))
 )

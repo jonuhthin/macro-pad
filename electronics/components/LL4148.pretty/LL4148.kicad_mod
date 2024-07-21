@@ -1,0 +1,208 @@
+(footprint "LL4148"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "D2"
+		(at -0.1 0.1 -90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "848ca5e5-4294-49e7-b639-d0aff09aac4c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "1N4148"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2ef3df54-22dc-436f-a39b-be879440ae47")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "LL4148"
+		(at -0.3 0.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c264d4b9-ec8a-431e-a66a-4025c98c618a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(at -2.1 1.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b03b6bb1-deb9-49f7-9e33-23566ba87a9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "100V 0.15A standard switching diode, DO-35"
+		(at -2.1 1.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53886438-b0d4-4ad8-b6af-18134baff709")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Device" "D"
+		(at -0.125 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2b8ebae-2d33-4f88-b73a-a5f44298ea63")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" "1=K 2=A"
+		(at -0.125 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0408bcc-b4df-406e-a1d0-eb5730da1a65")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C435829"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6424cfe-85ef-4ded-a885-24411611bbc3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.6 -1.4)
+		(end 0.3 -1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c204ee70-fe1a-4038-b5ec-fff8a5d6fada")
+	)
+	(fp_line
+		(start -0.35 -1.7)
+		(end -0.35 -1.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cace0b26-2a5e-4604-a7c2-13d8432f3466")
+	)
+	(fp_line
+		(start -0.25 -1.4)
+		(end 0.05 -1.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8ff7524d-3507-4ca8-a444-412a807ccf1b")
+	)
+	(fp_line
+		(start 0.05 -1.6)
+		(end -0.25 -1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "402a1dcf-d504-4cf2-ab51-0049acb5eefe")
+	)
+	(fp_line
+		(start 0.05 -1.2)
+		(end 0.05 -1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b2162fe8-a83c-408c-9f92-0f8e154df1c7")
+	)
+	(fp_poly
+		(pts
+			(xy 0.05 -1.6) (xy -0.25 -1.4) (xy 0.05 -1.2)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "99d40932-7470-4c9e-8361-50cf6ca3c9a9")
+	)
+	(fp_rect
+		(start -2.5 -1)
+		(end 2.4 1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "2b3d991a-fb50-4b6d-9a29-942ff0e7ab6a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4c3476e5-3f5a-4009-b605-bb166d99deb7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.7 0.1)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "f9b9a1b4-fe26-4bea-b4b8-bd7d5cba0a02")
+	)
+	(pad "2" smd roundrect
+		(at 1.6 0.1)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "de346d9e-bb73-4f61-88fd-46170b2b9802")
+	)
+)

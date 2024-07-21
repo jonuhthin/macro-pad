@@ -3,4 +3,6 @@
   (lib (name "Arduino")(type "KiCad")(uri "${KIPRJMOD}/components/Arduino.kicad_sym")(options "")(descr ""))
   (lib (name "SSD1306")(type "KiCad")(uri "${KIPRJMOD}/components/SSD1306_OLED-0.91-128x32.kicad_sym")(options "")(descr ""))
   (lib (name "ArduinoProMicro")(type "KiCad")(uri "${KIPRJMOD}/components/ArduinoProMicro.kicad_sym")(options "")(descr ""))
+  (lib (name "MCP73871")(type "KiCad")(uri "${KIPRJMOD}/components/MCP73831T-2ACI_OT/MCP73831T-2ACI_OT.kicad_sym")(options "")(descr ""))
+  (lib (name "jlcpartnumbers")(type "KiCad")(uri "${KIPRJMOD}/components/jlcpartnumbers.kicad_sym")(options "")(descr ""))
 )

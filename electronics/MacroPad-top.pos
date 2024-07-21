@@ -1,0 +1,63 @@
+### Footprint positions - created on 2024-06-24T21:54:56-0400 ###
+### Printed by KiCad version 8.0.2
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                Package                                           PosX       PosY       Rot  Side
+BT1       Battery            PinHeader_1x02_P2.00mm_Vertical                99.5000   -43.5000  -90.0000  top
+C1        4.7uF              C_0603_1608Metric_Pad1.08x0.95mm_HandSolder    87.2750  -117.5000   90.0000  top
+C2        4.7uF              C_0603_1608Metric_Pad1.08x0.95mm_HandSolder    91.1375  -116.5000  180.0000  top
+D1        LL4148             LL4148                                        104.0250   -60.8125   90.0000  top
+D2        LL4148             LL4148                                        123.0750   -60.8125   90.0000  top
+D3        LL4148             LL4148                                        142.1250   -60.8125   90.0000  top
+D4        LL4148             LL4148                                        161.1750   -60.8125   90.0000  top
+D5        LL4148             LL4148                                        104.0250   -79.8625   90.0000  top
+D6        LL4148             LL4148                                        123.0750   -79.8625   90.0000  top
+D7        LL4148             LL4148                                        142.1250   -79.8625   90.0000  top
+D8        LL4148             LL4148                                        161.1750   -79.8625   90.0000  top
+D9        LL4148             LL4148                                        104.0250   -98.9125   90.0000  top
+D10       LL4148             LL4148                                        123.0750   -98.9125   90.0000  top
+D11       LL4148             LL4148                                        142.1250   -98.9125   90.0000  top
+D12       LL4148             LL4148                                        161.1750   -98.9125   90.0000  top
+D13       LL4148             LL4148                                        104.0250  -117.9625   90.0000  top
+D14       LL4148             LL4148                                        123.0750  -117.9625   90.0000  top
+D15       LL4148             LL4148                                        142.1250  -117.9625   90.0000  top
+D16       LL4148             LL4148                                        161.1750  -117.9625   90.0000  top
+D17       LL4148             LL4148                                        104.0250  -137.0125   90.0000  top
+D18       LL4148             LL4148                                        123.0750  -137.0125   90.0000  top
+D19       LL4148             LL4148                                        142.1250  -137.0125   90.0000  top
+D20       LL4148             LL4148                                        161.1750  -137.0125   90.0000  top
+D21       LL4148             LL4148                                        104.0250  -156.0625   90.0000  top
+D22       LL4148             LL4148                                        123.0750  -156.0625   90.0000  top
+D23       LL4148             LL4148                                        142.1250  -156.0625   90.0000  top
+D24       LL4148             LL4148                                        161.1750  -156.0625   90.0000  top
+R2        2K                 R_1210_3225Metric_Pad1.30x2.65mm_HandSolder    95.5000  -108.0000  -90.0000  top
+SW0       SW_Coded           PinHeader_1x05_P2.54mm_Vertical                86.0750  -132.8850   90.0000  top
+SW1       SW_Push            SW_Cherry_MX_1.00u_PCB                        115.6400   -48.2300    0.0000  top
+SW2       SW_Push            SW_Cherry_MX_1.00u_PCB                        134.6900   -48.2300    0.0000  top
+SW3       SW_Push            SW_Cherry_MX_1.00u_PCB                        153.7400   -48.2300    0.0000  top
+SW4       SW_Push            SW_Cherry_MX_1.00u_PCB                        172.7900   -48.2300    0.0000  top
+SW5       SW_Push            SW_Cherry_MX_1.00u_PCB                        115.6400   -67.2800    0.0000  top
+SW6       SW_Push            SW_Cherry_MX_1.00u_PCB                        134.6900   -67.2800    0.0000  top
+SW7       SW_Push            SW_Cherry_MX_1.00u_PCB                        153.7400   -67.2800    0.0000  top
+SW8       SW_Push            SW_Cherry_MX_1.00u_PCB                        172.7900   -67.2800    0.0000  top
+SW9       SW_Push            SW_Cherry_MX_1.00u_PCB                        115.6400   -86.3300    0.0000  top
+SW10      SW_Push            SW_Cherry_MX_1.00u_PCB                        134.6900   -86.3300    0.0000  top
+SW11      SW_Push            SW_Cherry_MX_1.00u_PCB                        153.7400   -86.3300    0.0000  top
+SW12      SW_Push            SW_Cherry_MX_1.00u_PCB                        172.7900   -86.3300    0.0000  top
+SW13      SW_Push            SW_Cherry_MX_1.00u_PCB                        115.6400  -105.3800    0.0000  top
+SW14      SW_Push            SW_Cherry_MX_1.00u_PCB                        134.6900  -105.3800    0.0000  top
+SW15      SW_Push            SW_Cherry_MX_1.00u_PCB                        153.7400  -105.3800    0.0000  top
+SW16      SW_Push            SW_Cherry_MX_1.00u_PCB                        172.7900  -105.3800    0.0000  top
+SW17      SW_Push            SW_Cherry_MX_1.00u_PCB                        115.6400  -124.4300    0.0000  top
+SW18      SW_Push            SW_Cherry_MX_1.00u_PCB                        134.6900  -124.4300    0.0000  top
+SW19      SW_Push            SW_Cherry_MX_1.00u_PCB                        153.7400  -124.4300    0.0000  top
+SW20      SW_Push            SW_Cherry_MX_1.00u_PCB                        172.7900  -124.4300    0.0000  top
+SW21      SW_Push            SW_Cherry_MX_1.00u_PCB                        115.6400  -143.4800    0.0000  top
+SW22      SW_Push            SW_Cherry_MX_1.00u_PCB                        134.6900  -143.4800    0.0000  top
+SW23      SW_Push            SW_Cherry_MX_1.00u_PCB                        153.7400  -143.4800    0.0000  top
+SW24      SW_Push            SW_Cherry_MX_1.00u_PCB                        172.7900  -143.4800    0.0000  top
+SW25      SW_SPDT            PinHeader_1x03_P2.54mm_Vertical                80.5000   -95.0800  180.0000  top
+U1        SSD1306            SSD1306-0.91-OLED-4pin-128x32                  84.1150  -128.3850   90.0000  top
+U2        ProMicro           Sparkfun_Pro_Micro                             97.7400   -79.4400  180.0000  top
+U4        MCP73831T-2ACI_OT  SOT95P280X145-5N                               87.0602  -109.2954   90.0000  top
+## End

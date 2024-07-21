@@ -501,29 +501,50 @@
 				)
 			)
 		)
-		(symbol "Diode:1N4148"
+		(symbol "Device:Battery"
 			(pin_numbers hide)
-			(pin_names hide)
+			(pin_names
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "1N4148"
-				(at 0 -2.54 0)
+			(property "Value" "Battery"
+				(at 2.54 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Multiple-cell battery"
 				(at 0 0 0)
 				(effects
 					(font
@@ -532,7 +553,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(property "ki_keywords" "batt voltage-source cell"
 				(at 0 0 0)
 				(effects
 					(font
@@ -541,67 +562,54 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "100V 0.15A standard switching diode, DO-35"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*DO?35*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1N4148_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
+			(symbol "Battery_0_1"
+				(rectangle
+					(start -2.032 -1.397)
+					(end 2.032 -1.651)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -2.032 1.778)
+					(end 2.032 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.3208 -1.9812)
+					(end 1.27 -2.4892)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.3208 1.1938)
+					(end 1.27 0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 0 -1.524) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -613,7 +621,79 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 0 -1.016) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.508) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.667) (xy 1.27 2.667)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.175) (xy 0.762 2.159)
 					)
 					(stroke
 						(width 0.254)
@@ -624,11 +704,11 @@
 					)
 				)
 			)
-			(symbol "1N4148_1_1"
+			(symbol "Battery_1_1"
 				(pin passive line
-					(at -3.81 0 0)
+					(at 0 5.08 270)
 					(length 2.54)
-					(name "K"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -644,9 +724,288 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 0 -5.08 90)
 					(length 2.54)
-					(name "A"
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -753,6 +1112,303 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MCP73831:MCP73831T-2ACI_OT"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -4.1227 10.0778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "MCP73831T-2ACI_OT"
+				(at -5.9526 -17.1963 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "MCP73831T-2ACI_OT:SOT95P280X145-5N"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Microchip"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "\nTINY INTEGRATED LI-ION/LI-POLY CHARGE MGNT CONTROLLER, 4.2V VREG | Microchip Technology Inc. MCP73831T-2ACI/OT\n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PACKAGE" "SOT-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MPN" "MCP73831T-2ACI/OT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "SOT-23 Microchip"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "OC_FARNELL" "1332158"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/MCP73831T-2ACI/OT/Microchip/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "MCP73831T-2ACI/OT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=53208&manufacturer=Microchip&part_name=MCP73831T-2ACI/OT&search_term=mcp73831"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SUPPLIER" "Microchip"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "OC_NEWARK" "56K7045"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/MCP73831T-2ACI/OT/Microchip/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "MCP73831T-2ACI_OT_0_0"
+				(rectangle
+					(start -12.7 -12.7)
+					(end 12.7 7.62)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "STAT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 -7.62 0)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "PROG"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1601,6 +2257,343 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_SPDT"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPDT_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "jlcpartnumbers:LL4148"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D1"
+				(at 1.2701 -2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "LL4148"
+				(at -1.2699 -2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, DO-35"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C435829"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LL4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LL4148_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -1759,6 +2752,12 @@
 		(uuid "3034ac10-a5c6-49a3-8f66-456ae2d5df4a")
 	)
 	(junction
+		(at 95.25 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31537e0c-04fc-40f9-b83e-8f9e64973a06")
+	)
+	(junction
 		(at 194.31 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1795,6 +2794,12 @@
 		(uuid "49398f15-e3a6-4c64-8555-78751b66924f")
 	)
 	(junction
+		(at 83.82 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c22a700-357a-451b-8928-ef40c2d98a1d")
+	)
+	(junction
 		(at 226.06 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1805,6 +2810,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56827573-26e3-4b02-a62b-aaf5cfa638a1")
+	)
+	(junction
+		(at 35.56 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62a48d46-e20f-457c-b303-6bca63dbecce")
 	)
 	(junction
 		(at 269.24 86.36)
@@ -1932,6 +2943,12 @@
 		(color 0 0 0 0)
 		(uuid "fcd7bf2b-0adb-4909-8e04-8f8953e3ce4f")
 	)
+	(junction
+		(at 48.26 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdbdac50-ccd7-497d-9ecc-8944c4248ecd")
+	)
 	(no_connect
 		(at 40.64 123.19)
 		(uuid "0a398fde-518c-48c3-ad3c-1af6c9e4b662")
@@ -1947,6 +2964,10 @@
 	(no_connect
 		(at 68.58 138.43)
 		(uuid "23bc9b3c-80c9-4bbb-81c9-18ced2bfeeff")
+	)
+	(no_connect
+		(at 279.4 83.82)
+		(uuid "2a9cf2b9-a9dd-4567-8804-baccb0cd1eb4")
 	)
 	(no_connect
 		(at 68.58 133.35)
@@ -2084,6 +3105,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 120.65) (xy 95.25 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19a4ad16-ad09-49ce-b1e0-a460485da1ad")
+	)
+	(wire
+		(pts
 			(xy 194.31 137.16) (xy 215.9 137.16)
 		)
 		(stroke
@@ -2091,6 +3122,16 @@
 			(type default)
 		)
 		(uuid "1ecafb8c-cfc8-4116-b3a5-7aeb3430bdf9")
+	)
+	(wire
+		(pts
+			(xy 48.26 170.18) (xy 48.26 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f20c9a8-9d64-43e9-ae34-d4bdb237fc57")
 	)
 	(wire
 		(pts
@@ -2124,6 +3165,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 144.78) (xy 35.56 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d4a03cb-96a6-4b8d-90b9-f197224157f6")
+	)
+	(wire
+		(pts
 			(xy 91.44 57.15) (xy 91.44 59.69)
 		)
 		(stroke
@@ -2131,6 +3182,16 @@
 			(type default)
 		)
 		(uuid "32f9622c-8993-4027-9d6f-6e8cbda22f1e")
+	)
+	(wire
+		(pts
+			(xy 115.57 109.22) (xy 115.57 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "378b4343-8d85-4e6d-a203-9d88a198245a")
 	)
 	(wire
 		(pts
@@ -2151,6 +3212,36 @@
 			(type default)
 		)
 		(uuid "3a128c45-2d68-4206-80e2-b1a34bd15730")
+	)
+	(wire
+		(pts
+			(xy 35.56 144.78) (xy 35.56 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b421ce5-f326-45d0-9ee6-90221349607b")
+	)
+	(wire
+		(pts
+			(xy 110.49 109.22) (xy 82.55 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3faa6fc7-c7f0-4ddb-8943-c633eb3d51b5")
+	)
+	(wire
+		(pts
+			(xy 95.25 165.1) (xy 95.25 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4090106a-5728-42e4-9187-640d44bb7b6c")
 	)
 	(wire
 		(pts
@@ -2294,6 +3385,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 165.1) (xy 95.25 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e7fdbf3-278f-4a99-a349-906596b32641")
+	)
+	(wire
+		(pts
 			(xy 204.47 43.18) (xy 204.47 64.77)
 		)
 		(stroke
@@ -2334,6 +3435,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 160.02) (xy 48.26 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0be7bc-6ed9-40ee-afe3-28d4033f51a4")
+	)
+	(wire
+		(pts
 			(xy 204.47 21.59) (xy 204.47 43.18)
 		)
 		(stroke
@@ -2341,6 +3452,16 @@
 			(type default)
 		)
 		(uuid "880bfa87-2174-44a6-936a-cda94c5e17ab")
+	)
+	(wire
+		(pts
+			(xy 41.91 165.1) (xy 48.26 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ebcdd4c-70fa-49c5-ba5c-0bbe80262b84")
 	)
 	(wire
 		(pts
@@ -2354,6 +3475,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 109.22) (xy 82.55 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ac77fd-975d-4535-806a-44a896eb802d")
+	)
+	(wire
+		(pts
 			(xy 269.24 43.18) (xy 269.24 64.77)
 		)
 		(stroke
@@ -2361,6 +3492,16 @@
 			(type default)
 		)
 		(uuid "9dfd0c24-ce74-4799-9139-c47d6c48dd9e")
+	)
+	(wire
+		(pts
+			(xy 41.91 172.72) (xy 48.26 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e0ae588-1d7e-4e61-9082-0bdb4b61b13c")
 	)
 	(wire
 		(pts
@@ -2381,6 +3522,16 @@
 			(type default)
 		)
 		(uuid "a1db23b8-6bd8-491a-9975-73741d66922c")
+	)
+	(wire
+		(pts
+			(xy 29.21 160.02) (xy 35.56 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af81953b-9f8e-424c-9e03-f9bf25e8b7d8")
 	)
 	(wire
 		(pts
@@ -2411,6 +3562,16 @@
 			(type default)
 		)
 		(uuid "b434cdc6-1f07-4796-935f-69a1ce5e4e05")
+	)
+	(wire
+		(pts
+			(xy 106.68 160.02) (xy 83.82 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5609cee-7770-467a-93fe-2d11924193e4")
 	)
 	(wire
 		(pts
@@ -2591,6 +3752,16 @@
 			(type default)
 		)
 		(uuid "f5660501-86a3-42a5-a8e0-385c46276019")
+	)
+	(wire
+		(pts
+			(xy 95.25 120.65) (xy 95.25 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f619a9d6-be01-4585-a3f3-838415a7ebfb")
 	)
 	(wire
 		(pts
@@ -3074,6 +4245,28 @@
 			)
 		)
 	)
+	(global_label "STAT"
+		(shape input)
+		(at 106.68 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be677a94-1ef4-4f8d-b3e9-679f20f6be9c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.2443 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
 		(at 68.58 92.71 0)
@@ -3316,6 +4509,28 @@
 			)
 		)
 	)
+	(global_label "STAT"
+		(shape input)
+		(at 133.35 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eb47fc05-5cb1-48a7-8fce-846e0558b662")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.9143 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 199.39 43.18 0)
@@ -3359,7 +4574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 199.39 43.18 0)
 			(effects
 				(font
@@ -3569,7 +4784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 242.57 43.18 0)
 			(effects
 				(font
@@ -3594,7 +4809,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 194.31 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3612,7 +4827,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 196.85 113.0299 90)
 			(effects
 				(font
@@ -3621,7 +4836,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 194.31 111.76 0)
 			(effects
 				(font
@@ -3630,7 +4845,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 194.31 111.76 0)
 			(effects
 				(font
@@ -3658,6 +4873,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 194.31 111.76 0)
 			(effects
 				(font
@@ -3724,7 +4948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 220.98 129.54 0)
 			(effects
 				(font
@@ -3791,7 +5015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 264.16 86.36 0)
 			(effects
 				(font
@@ -3816,7 +5040,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 194.31 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3834,7 +5058,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 196.85 134.6199 90)
 			(effects
 				(font
@@ -3843,7 +5067,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 194.31 133.35 0)
 			(effects
 				(font
@@ -3852,7 +5076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 194.31 133.35 0)
 			(effects
 				(font
@@ -3880,6 +5104,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 194.31 133.35 0)
 			(effects
 				(font
@@ -4011,7 +5244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 199.39 107.95 0)
 			(effects
 				(font
@@ -4140,6 +5373,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 95.25 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c500259-4085-433f-8ee3-8c391bb99288")
+		(property "Reference" "C2"
+			(at 99.06 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 99.06 171.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 96.2152 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 95.25 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5252398"
+			(at 95.25 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" ""
+			(at 95.25 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d2d5ee89-fc8e-4407-80db-52057e471aa9")
+		)
+		(pin "1"
+			(uuid "780a7d3b-fdcb-42f6-947b-bd211da6743c")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MacroPad-rescue:+5V-power")
 		(at 44.45 71.12 0)
 		(unit 1)
@@ -4247,7 +5567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 242.57 151.13 0)
 			(effects
 				(font
@@ -4266,6 +5586,71 @@
 			(project "MacroPad"
 				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
 					(reference "SW23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 29.21 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28768085-2f5b-4c37-842e-d747618439b7")
+		(property "Reference" "#PWR010"
+			(at 29.21 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 29.337 172.0342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab009ed4-349d-4cad-ad0e-413aa0dfb567")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -4314,7 +5699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 220.98 86.36 0)
 			(effects
 				(font
@@ -4339,7 +5724,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 237.49 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4357,7 +5742,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 240.03 69.8499 90)
 			(effects
 				(font
@@ -4366,7 +5751,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 237.49 68.58 0)
 			(effects
 				(font
@@ -4375,7 +5760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 237.49 68.58 0)
 			(effects
 				(font
@@ -4403,6 +5788,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 237.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 237.49 68.58 0)
 			(effects
 				(font
@@ -4469,7 +5863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 242.57 107.95 0)
 			(effects
 				(font
@@ -4598,7 +5992,80 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "Switch:SW_SPDT")
+		(at 113.03 104.14 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30645a0c-2321-4205-832d-26e4bb2fa633")
+		(property "Reference" "SW25"
+			(at 116.84 103.505 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 116.84 106.045 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 113.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4b60dee-5b9b-44b5-b3c7-99533088a871")
+		)
+		(pin "2"
+			(uuid "f18eefcb-ee56-4f66-84cb-a601c2960683")
+		)
+		(pin "3"
+			(uuid "e025dcd7-8a78-43a7-97ca-33126029829c")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "SW25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 259.08 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4616,7 +6083,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 261.62 113.0299 90)
 			(effects
 				(font
@@ -4625,7 +6092,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 259.08 111.76 0)
 			(effects
 				(font
@@ -4634,7 +6101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 259.08 111.76 0)
 			(effects
 				(font
@@ -4662,6 +6129,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 259.08 111.76 0)
 			(effects
 				(font
@@ -4686,7 +6162,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 237.49 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4704,7 +6180,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 240.03 156.2099 90)
 			(effects
 				(font
@@ -4713,7 +6189,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 237.49 154.94 0)
 			(effects
 				(font
@@ -4722,7 +6198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 237.49 154.94 0)
 			(effects
 				(font
@@ -4750,6 +6226,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 237.49 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 237.49 154.94 0)
 			(effects
 				(font
@@ -4774,7 +6259,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 259.08 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4792,7 +6277,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 261.62 156.2099 90)
 			(effects
 				(font
@@ -4801,7 +6286,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 259.08 154.94 0)
 			(effects
 				(font
@@ -4810,7 +6295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 259.08 154.94 0)
 			(effects
 				(font
@@ -4846,6 +6331,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C435829"
+			(at 259.08 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7db4c64a-286d-4358-ad41-f5043cd0d72f")
 		)
@@ -4856,6 +6350,288 @@
 			(project "MacroPad"
 				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
 					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47452f4a-df1b-4f6f-be4f-6997f3ce64bf")
+		(property "Reference" "#PWR012"
+			(at 83.82 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.947 179.6542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c37ac6bc-bf73-467b-91e5-d7eb6a4ea9dd")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCP73831:MCP73831T-2ACI_OT")
+		(at 66.04 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c521c76-92ba-486e-9a8c-c5241fea9c9f")
+		(property "Reference" "U4"
+			(at 66.04 179.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP73831T-2ACI_OT"
+			(at 66.294 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "proj_components:SOT95P280X145-5N"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Microchip"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\nTINY INTEGRATED LI-ION/LI-POLY CHARGE MGNT CONTROLLER, 4.2V VREG | Microchip Technology Inc. MCP73831T-2ACI/OT\n"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "SOT-5"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MCP73831T-2ACI/OT"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "SOT-23 Microchip"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" "1332158"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MCP73831T-2ACI/OT/Microchip/view-part/?ref=snap"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "MCP73831T-2ACI/OT"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=53208&manufacturer=Microchip&part_name=MCP73831T-2ACI/OT&search_term=mcp73831"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" "Microchip"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" "56K7045"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MCP73831T-2ACI/OT/Microchip/view-part/?ref=eda"
+			(at 66.04 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "31026834-6b6e-42a1-9ae6-f43eff06031e")
+		)
+		(pin "1"
+			(uuid "62f7cc67-74f1-4b14-bdea-cd2bd97ca342")
+		)
+		(pin "4"
+			(uuid "5ffb9d25-13a4-498a-a5d7-7810518a7d4c")
+		)
+		(pin "3"
+			(uuid "ae02c59e-3d0a-4d29-b007-294a15edb42e")
+		)
+		(pin "2"
+			(uuid "f84cb6fa-fc7c-48af-9527-2634fa1d2a3f")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -4927,6 +6703,71 @@
 		)
 	)
 	(symbol
+		(lib_id "MacroPad-rescue:+5V-power")
+		(at 113.03 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50b1eb4d-560f-489c-928c-d4b3d61aa826")
+		(property "Reference" "#PWR014"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 113.411 94.6658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d682810-b2c7-406b-85fa-f9a6690029a7")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MacroPad-rescue:GND-power")
 		(at 104.14 132.08 270)
 		(unit 1)
@@ -4986,6 +6827,73 @@
 			(project "MacroPad"
 				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery")
+		(at 83.82 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5792c226-42b5-4ddf-bd00-4930cc5646df")
+		(property "Reference" "BT1"
+			(at 83.82 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Battery"
+			(at 87.63 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical"
+			(at 83.82 168.656 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 168.656 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c281c3b-0087-4902-b9bd-aef5bde89e86")
+		)
+		(pin "2"
+			(uuid "7e381473-74dd-4b2e-9059-3209eccec3f0")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -5058,7 +6966,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 237.49 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5076,7 +6984,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 240.03 134.6199 90)
 			(effects
 				(font
@@ -5085,7 +6993,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 237.49 133.35 0)
 			(effects
 				(font
@@ -5094,7 +7002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 237.49 133.35 0)
 			(effects
 				(font
@@ -5122,6 +7030,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 237.49 133.35 0)
 			(effects
 				(font
@@ -5146,7 +7063,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 215.9 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5164,7 +7081,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 218.44 48.2599 90)
 			(effects
 				(font
@@ -5173,7 +7090,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 215.9 46.99 0)
 			(effects
 				(font
@@ -5182,7 +7099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 215.9 46.99 0)
 			(effects
 				(font
@@ -5210,6 +7127,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 215.9 46.99 0)
 			(effects
 				(font
@@ -5234,7 +7160,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 259.08 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5252,7 +7178,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 261.62 91.4399 90)
 			(effects
 				(font
@@ -5261,7 +7187,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 259.08 90.17 0)
 			(effects
 				(font
@@ -5270,7 +7196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 259.08 90.17 0)
 			(effects
 				(font
@@ -5298,6 +7224,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 259.08 90.17 0)
 			(effects
 				(font
@@ -5364,7 +7299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 264.16 151.13 0)
 			(effects
 				(font
@@ -5431,7 +7366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 220.98 151.13 0)
 			(effects
 				(font
@@ -5498,7 +7433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 199.39 151.13 0)
 			(effects
 				(font
@@ -5523,7 +7458,172 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "Device:C_Polarized")
+		(at 29.21 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7088146a-2864-45a8-856e-fb88f4bb0f6d")
+		(property "Reference" "C1"
+			(at 20.32 162.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 20.32 164.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 30.1752 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 29.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5252398"
+			(at 29.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" ""
+			(at 29.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9b1aa099-02ea-4b52-8560-fd39d810f4fd")
+		)
+		(pin "1"
+			(uuid "4bbb7d79-7082-417a-b70d-cb6ce75c7982")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 41.91 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "767a400a-ef5f-4201-9e4e-f30ce181e642")
+		(property "Reference" "R2"
+			(at 44.45 168.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2K"
+			(at 41.91 170.434 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder"
+			(at 40.132 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C137078"
+			(at 41.91 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df8417e9-7fd7-46c7-83d7-377885f20116")
+		)
+		(pin "2"
+			(uuid "60ecdac7-283b-478e-942b-2756b0c3e15a")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 259.08 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5541,7 +7641,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 261.62 69.8499 90)
 			(effects
 				(font
@@ -5550,7 +7650,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 259.08 68.58 0)
 			(effects
 				(font
@@ -5559,7 +7659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 259.08 68.58 0)
 			(effects
 				(font
@@ -5587,6 +7687,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 259.08 68.58 0)
 			(effects
 				(font
@@ -5611,7 +7720,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 215.9 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5629,7 +7738,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 218.44 156.2099 90)
 			(effects
 				(font
@@ -5638,7 +7747,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 215.9 154.94 0)
 			(effects
 				(font
@@ -5647,7 +7756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 215.9 154.94 0)
 			(effects
 				(font
@@ -5675,6 +7784,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 215.9 154.94 0)
 			(effects
 				(font
@@ -5699,7 +7817,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 194.31 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5717,7 +7835,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 196.85 69.8499 90)
 			(effects
 				(font
@@ -5726,7 +7844,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 194.31 68.58 0)
 			(effects
 				(font
@@ -5735,7 +7853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 194.31 68.58 0)
 			(effects
 				(font
@@ -5763,6 +7881,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 194.31 68.58 0)
 			(effects
 				(font
@@ -5787,7 +7914,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 215.9 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5805,7 +7932,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 218.44 113.0299 90)
 			(effects
 				(font
@@ -5814,7 +7941,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 215.9 111.76 0)
 			(effects
 				(font
@@ -5823,7 +7950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 215.9 111.76 0)
 			(effects
 				(font
@@ -5851,6 +7978,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 215.9 111.76 0)
 			(effects
 				(font
@@ -5875,7 +8011,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 237.49 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5893,7 +8029,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 240.03 113.0299 90)
 			(effects
 				(font
@@ -5902,7 +8038,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 237.49 111.76 0)
 			(effects
 				(font
@@ -5911,7 +8047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 237.49 111.76 0)
 			(effects
 				(font
@@ -5939,6 +8075,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 237.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 237.49 111.76 0)
 			(effects
 				(font
@@ -5963,7 +8108,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 237.49 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5981,7 +8126,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 240.03 91.4399 90)
 			(effects
 				(font
@@ -5990,7 +8135,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 237.49 90.17 0)
 			(effects
 				(font
@@ -5999,7 +8144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 237.49 90.17 0)
 			(effects
 				(font
@@ -6027,6 +8172,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 237.49 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 237.49 90.17 0)
 			(effects
 				(font
@@ -6051,7 +8205,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 259.08 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6069,7 +8223,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 261.62 48.2599 90)
 			(effects
 				(font
@@ -6078,7 +8232,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 259.08 46.99 0)
 			(effects
 				(font
@@ -6087,7 +8241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 259.08 46.99 0)
 			(effects
 				(font
@@ -6115,6 +8269,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 259.08 46.99 0)
 			(effects
 				(font
@@ -6139,7 +8302,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 194.31 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6157,7 +8320,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 196.85 48.2599 90)
 			(effects
 				(font
@@ -6166,7 +8329,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 194.31 46.99 0)
 			(effects
 				(font
@@ -6175,7 +8338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 194.31 46.99 0)
 			(effects
 				(font
@@ -6203,6 +8366,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 194.31 46.99 0)
 			(effects
 				(font
@@ -6269,7 +8441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 264.16 129.54 0)
 			(effects
 				(font
@@ -6336,7 +8508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 220.98 43.18 0)
 			(effects
 				(font
@@ -6403,7 +8575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 199.39 129.54 0)
 			(effects
 				(font
@@ -6470,7 +8642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 220.98 107.95 0)
 			(effects
 				(font
@@ -6495,7 +8667,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 259.08 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6513,7 +8685,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 261.62 134.6199 90)
 			(effects
 				(font
@@ -6522,7 +8694,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 259.08 133.35 0)
 			(effects
 				(font
@@ -6531,7 +8703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 259.08 133.35 0)
 			(effects
 				(font
@@ -6559,6 +8731,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 259.08 133.35 0)
 			(effects
 				(font
@@ -6625,7 +8806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 199.39 64.77 0)
 			(effects
 				(font
@@ -6692,7 +8873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 242.57 129.54 0)
 			(effects
 				(font
@@ -6711,6 +8892,71 @@
 			(project "MacroPad"
 				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
 					(reference "SW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b41f61a8-2b6c-40c3-86aa-ccd8c46355fb")
+		(property "Reference" "#PWR013"
+			(at 95.25 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.377 179.6542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5192777a-c98d-4e24-8ac0-3ada212df828")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -6759,7 +9005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 242.57 86.36 0)
 			(effects
 				(font
@@ -6826,7 +9072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 220.98 64.77 0)
 			(effects
 				(font
@@ -6851,7 +9097,72 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "power:GND")
+		(at 48.26 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bcff9fa8-366a-4669-871d-96930510384a")
+		(property "Reference" "#PWR011"
+			(at 48.26 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.387 177.1142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "015c218c-b6e8-40c6-977a-7ac90c6543f4")
+		)
+		(instances
+			(project "MacroPad"
+				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 215.9 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6869,7 +9180,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 218.44 134.6199 90)
 			(effects
 				(font
@@ -6878,7 +9189,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 215.9 133.35 0)
 			(effects
 				(font
@@ -6887,7 +9198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 215.9 133.35 0)
 			(effects
 				(font
@@ -6915,6 +9226,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 215.9 133.35 0)
 			(effects
 				(font
@@ -7046,7 +9366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 264.16 43.18 0)
 			(effects
 				(font
@@ -7071,7 +9391,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 237.49 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7089,7 +9409,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 240.03 48.2599 90)
 			(effects
 				(font
@@ -7098,7 +9418,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 237.49 46.99 0)
 			(effects
 				(font
@@ -7107,7 +9427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 237.49 46.99 0)
 			(effects
 				(font
@@ -7135,6 +9455,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 237.49 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 237.49 46.99 0)
 			(effects
 				(font
@@ -7201,7 +9530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 264.16 107.95 0)
 			(effects
 				(font
@@ -7226,73 +9555,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MacroPad-rescue:+5V-power")
-		(at 133.35 52.07 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d23c8e32-c592-47ca-92af-eb6fa9aeb0cc")
-		(property "Reference" "#PWR06"
-			(at 129.54 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 137.7442 52.451 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6079a0e9-e07a-470d-b8bf-28712d733788")
-		)
-		(instances
-			(project "MacroPad"
-				(path "/85dab528-831a-4ba8-89b3-2f6f2845b162"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 215.9 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7310,7 +9573,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 218.44 91.4399 90)
 			(effects
 				(font
@@ -7319,7 +9582,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -7328,7 +9591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -7356,6 +9619,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -7445,7 +9717,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 194.31 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7463,7 +9735,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 196.85 91.4399 90)
 			(effects
 				(font
@@ -7472,7 +9744,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 194.31 90.17 0)
 			(effects
 				(font
@@ -7481,7 +9753,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 194.31 90.17 0)
 			(effects
 				(font
@@ -7509,6 +9781,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 194.31 90.17 0)
 			(effects
 				(font
@@ -7533,7 +9814,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 215.9 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7551,7 +9832,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 218.44 69.8499 90)
 			(effects
 				(font
@@ -7560,7 +9841,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 215.9 68.58 0)
 			(effects
 				(font
@@ -7569,7 +9850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 215.9 68.58 0)
 			(effects
 				(font
@@ -7597,6 +9878,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 215.9 68.58 0)
 			(effects
 				(font
@@ -7663,7 +9953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 242.57 64.77 0)
 			(effects
 				(font
@@ -7821,7 +10111,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
+		(lib_id "jlcpartnumbers:LL4148")
 		(at 194.31 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7839,7 +10129,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "LL4148"
 			(at 196.85 156.2099 90)
 			(effects
 				(font
@@ -7848,7 +10138,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+		(property "Footprint" "LL4148:LL4148"
 			(at 194.31 154.94 0)
 			(effects
 				(font
@@ -7857,7 +10147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+		(property "Datasheet" ""
 			(at 194.31 154.94 0)
 			(effects
 				(font
@@ -7885,6 +10175,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C435829"
 			(at 194.31 154.94 0)
 			(effects
 				(font
@@ -7951,7 +10250,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 264.16 64.77 0)
 			(effects
 				(font
@@ -8018,7 +10317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 199.39 86.36 0)
 			(effects
 				(font

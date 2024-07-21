@@ -1,0 +1,7 @@
+### Footprint positions - created on 2024-06-24T21:54:56-0400 ###
+### Printed by KiCad version 8.0.2
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                             PosX       PosY       Rot  Side
+U3        SSD1306   SSD1306-0.91-OLED-4pin-128x32    84.1150   -62.6150  -90.0000  bottom
+## End

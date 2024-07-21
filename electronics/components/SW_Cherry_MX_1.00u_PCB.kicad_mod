@@ -27,7 +27,7 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Footprint" "SW_Cherry_MX_1.00u_PCB"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -281,6 +281,17 @@
 		)
 		(rotate
 			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/components/mx-switch.step"
+		(offset
+			(xyz 4.5 2.5 6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
 		)
 	)
 )

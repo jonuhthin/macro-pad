@@ -1,37 +1,263 @@
-(module SSD1306-0.91-OLED-4pin-128x32 (layer F.Cu) (tedit 5C3EAB22)
-  (fp_text reference REF** (at 1.9 5.91 90) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value SSD1306-0.91-OLED-4pin-128x32 (at 18.5 14) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start 38 12) (end 38 0) (layer F.CrtYd) (width 0.04))
-  (fp_line (start 0 12) (end 38 12) (layer F.CrtYd) (width 0.04))
-  (fp_line (start 0 0) (end 0 12) (layer F.CrtYd) (width 0.04))
-  (fp_line (start 38 0) (end 0 0) (layer F.CrtYd) (width 0.04))
-  (fp_line (start 3.5 0) (end 3.5 12) (layer F.SilkS) (width 0.04))
-  (fp_line (start 33 0) (end 33 12) (layer F.SilkS) (width 0.04))
-  (fp_text user "OLED Panel" (at 19 6) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user GND (at 34.5 2.19 -90) (layer F.SilkS)
-    (effects (font (size 0.75 0.75) (thickness 0.15)))
-  )
-  (fp_text user VCC (at 34.5 4.73 -90) (layer F.SilkS)
-    (effects (font (size 0.75 0.75) (thickness 0.15)))
-  )
-  (fp_text user SCL (at 34.5 7.27 -90) (layer F.SilkS)
-    (effects (font (size 0.75 0.75) (thickness 0.15)))
-  )
-  (fp_text user SDA (at 34.5 9.81 -90) (layer F.SilkS)
-    (effects (font (size 0.75 0.75) (thickness 0.15)))
-  )
-  (fp_line (start 38 0) (end 0 0) (layer F.SilkS) (width 0.04))
-  (fp_line (start 0 0) (end 0 12) (layer F.SilkS) (width 0.04))
-  (fp_line (start 0 12) (end 38 12) (layer F.SilkS) (width 0.04))
-  (fp_line (start 38 12) (end 38 0) (layer F.SilkS) (width 0.04))
-  (pad 1 thru_hole rect (at 36.5 2.19) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
-  (pad 2 thru_hole oval (at 36.5 4.73) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
-  (pad 3 thru_hole oval (at 36.5 7.27) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
-  (pad 4 thru_hole oval (at 36.5 9.81) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+(footprint "SSD1306-0.91-OLED-4pin-128x32"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 1.9 5.91 90)
+		(layer "F.SilkS")
+		(uuid "d6f65821-1297-4db4-aae9-a0ca9087349b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SSD1306-0.91-OLED-4pin-128x32"
+		(at 18.5 14 0)
+		(layer "F.Fab")
+		(uuid "c845cd10-c85b-49be-a126-8d2fb681344b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "SSD1306-0.91-OLED-4pin-128x32"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce8f492a-16d1-4d6c-b992-aeb740e7475a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "14cccd77-dace-4cf8-bcc6-e45d58ae9a22")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf753afb-9472-4f28-b4c1-32d2fc0191d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 0 0)
+		(end 0 12)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "770870d6-1678-4cf3-a999-17d26e93364e")
+	)
+	(fp_line
+		(start 0 12)
+		(end 38 12)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "254baea7-9d73-4672-94e4-dfc5c4ab0019")
+	)
+	(fp_line
+		(start 3.5 0)
+		(end 3.5 12)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cfad2c09-901d-4f35-83b1-c56507d79706")
+	)
+	(fp_line
+		(start 33 0)
+		(end 33 12)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e86de3a4-6143-4690-91bc-8698d7727c39")
+	)
+	(fp_line
+		(start 38 0)
+		(end 0 0)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c479e67d-0aad-4404-a8c9-c8fcc3da3fc1")
+	)
+	(fp_line
+		(start 38 12)
+		(end 38 0)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d48714fb-6bee-4636-b10a-d605a983cc19")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 12)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5130831d-f5c2-4f79-8ca5-fb02e3c3bb8d")
+	)
+	(fp_line
+		(start 0 12)
+		(end 38 12)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c0a60f5c-d86d-40d7-967c-12bed8621ae2")
+	)
+	(fp_line
+		(start 38 0)
+		(end 0 0)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "838da636-a5b3-4188-85f0-05535615b14a")
+	)
+	(fp_line
+		(start 38 12)
+		(end 38 0)
+		(stroke
+			(width 0.04)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5153f69b-a742-44a4-987b-10da34f9d2c1")
+	)
+	(fp_text user "VCC"
+		(at 34.5 4.73 -90)
+		(layer "F.SilkS")
+		(uuid "099213e0-1584-460f-81a6-3bd15df01099")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "SDA"
+		(at 34.5 9.81 -90)
+		(layer "F.SilkS")
+		(uuid "1cf461d8-add8-472f-937b-69c65531facd")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "OLED Panel"
+		(at 19 6 0)
+		(layer "F.SilkS")
+		(uuid "22a9415c-0563-45f2-82c9-5af5be2fc796")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "GND"
+		(at 34.5 2.19 -90)
+		(layer "F.SilkS")
+		(uuid "7449364e-c528-41e2-9132-8866369efbaa")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "SCL"
+		(at 34.5 7.27 -90)
+		(layer "F.SilkS")
+		(uuid "819561a8-4848-47dd-ade5-e11709d2c49a")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "8" thru_hole rect
+		(at 36.5 2.19)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2a2b4688-5377-4ccb-9c5b-7a14df89da64")
+	)
+	(pad "10" thru_hole oval
+		(at 36.5 7.27)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8f4f59e5-5f34-4d81-ac33-2815769362ca")
+	)
+	(pad "11" thru_hole oval
+		(at 36.5 9.81)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3c20ecc7-1db1-4392-927e-15c0e4d2b98b")
+	)
+	(pad "14" thru_hole oval
+		(at 36.5 4.73)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4285985d-3666-429a-9fc3-054e6b2b5907")
+	)
+	(model "${KIPRJMOD}/components/OLED_0.91_128x32.stp"
+		(offset
+			(xyz 19 -6 2.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
 )
