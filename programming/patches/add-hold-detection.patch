@@ -1,4 +1,15 @@
-163c163
-< 		if (key[i].stateChanged)
----
-> 		if (key[i].stateChanged || key[i].kstate == HOLD)
+diff --git a/./.pio/libdeps/pro_micro/Keypad/src/Keypad.cpp b/./.pio/libdeps/pro_micro/Keypad/src/Keypad.cpp
+index f146a6d..399e598 100644
+--- a/./.pio/libdeps/pro_micro/Keypad/src/Keypad.cpp
++++ b/./.pio/libdeps/pro_micro/Keypad/src/Keypad.cpp
+@@ -141,7 +141,9 @@ bool Keypad::updateList() {
+ 
+ 	// Report if the user changed the state of any key.
+ 	for (byte i=0; i<LIST_MAX; i++) {
+-		if (key[i].stateChanged) anyActivity = true;
++		if (key[i].stateChanged || key[i].kstate == HOLD) {
++            anyActivity = true;
++        }
+ 	}
+ 
+ 	return anyActivity;

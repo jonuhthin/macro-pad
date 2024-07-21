@@ -1,22 +1,35 @@
-from os.path import join, isfile
+import os, subprocess
 
-Import("env")
+env = DefaultEnvironment()
 
-FRAMEWORK_DIR = env.PioPlatform().get_package_dir("pro_micro")
-patchflag_path = join(FRAMEWORK_DIR, ".patching-done")
 
-# patch file only if we didn't do it before
-if not isfile(join(FRAMEWORK_DIR, ".patching-done")):
-    original_file = join(FRAMEWORK_DIR, "variants", "standard", "pins_arduino.h")
-    patched_file = join("patches", "1-framework-arduinoavr-add-pin-a8.patch")
+def patch_library(library_path):
+    project_dir = env["PROJECT_DIR"]
+    print(project_dir)
+    # Change the current working directory
+    previous_cwd = os.getcwd()
+    # os.chdir(project_dir)
+    # Example: Add a line to a specific header file
+    header_file = os.path.join(library_path, "src", "Keypad.cpp")
+    patch_file = os.path.join(os.path.curdir, "patches", "add-hold-detection.patch")
+    if not os.path.isfile(patch_file):
+        print(f"Patch file not found: {patch_file}")
+        return
 
-    assert isfile(original_file) and isfile(patched_file)
+    if os.path.exists(header_file):
+        result = env.Execute(f"patch -p1 < {patch_file}")
+        # Check for errors    if result != 0:
+        print(f"Error applying patch. Result: {result}")
+    else:
+        print("Patch applied successfully.")
+    # Change back to the previous working directory
+    os.chdir(previous_cwd)
 
-    env.Execute("patch %s %s" % (original_file, patched_file))
-    # env.Execute("touch " + patchflag_path)
 
-    def _touch(path):
-        with open(path, "w") as fp:
-            fp.write("")
+def main():
+    # Path to the library you want to patch
+    library_path = os.path.join(env["PROJECT_LIBDEPS_DIR"], env["PIOENV"], "Keypad")
+    patch_library(library_path)
 
-    env.Execute(lambda *args, **kwargs: _touch(patchflag_path))
+
+main()
