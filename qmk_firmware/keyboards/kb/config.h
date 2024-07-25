@@ -56,3 +56,6 @@
 #endif
 
 #endif
+
+#define ENCODERS_PAD_A { C6 }
+#define ENCODERS_PAD_B { D7 }
