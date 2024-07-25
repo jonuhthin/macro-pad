@@ -74,8 +74,7 @@ void refreshDisplay()
 }
 
 String msg;
-KeyboardKeycode *held;
-int heldLength = 0;
+bool keyPressed = false;
 
 void setup()
 {
@@ -134,7 +133,7 @@ void loop()
     prevTime = millis();
   }
 
-  if (millis() - prevTimeHeld > 10)
+  if (millis() - prevTimeHeld > 10 && keyPressed)
   {
     // Serial.print("holding: [");
     // for (int i = 0; i < heldLength; i++)
@@ -145,6 +144,7 @@ void loop()
     // }4445
     // Serial.println("]");
     NKROKeyboard.send();
+    keyPressed = false;
     prevTimeHeld = millis();
   }
 
@@ -207,6 +207,7 @@ void loop()
         {
           msg = " PRESSED.";
           NKROKeyboard.add(key);
+          keyPressed = true;
           display.clearDisplay();
           display.print("i: ");
           display.println(idx);
@@ -232,6 +233,7 @@ void loop()
         {
           msg = " HOLD.";
           NKROKeyboard.add(key);
+          keyPressed = true;
           break;
         }
         case RELEASED:
